@@ -1,0 +1,92 @@
+# /home/tester/.config/tmuxinator/pc360.yml
+
+name: pc360
+root: ~/
+
+windows:
+  - dash:
+      layout: main-vertical
+      panes:
+        - list:
+          - sudo -i
+          - ./flush
+          - iptables-restore < iptables.rules
+        - cat Readme
+        - #empty
+  - pc1:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - docker run -it --rm --net eth99 --name s1a iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s1b iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s1c iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s1d iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s1e iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s1f iperf3 -i1 -s
+
+  - pc2:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - docker run -it --rm --net eth99 --name s2a iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s2b iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s2c iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s2d iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s2e iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s2f iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s2g iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s2h iperf3 -i1 -s
+  - pc3:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - docker run -it --rm --net eth99 --name s3a iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s3b iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s3c iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s3d iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s3e iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s3f iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s3g iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s3h iperf3 -i1 -s
+  - pc4:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - docker run -it --rm --net eth99 --name s4a iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s4b iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s4c iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s4d iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s4e iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s4f iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s4g iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s4h iperf3 -i1 -s
+  - pc5:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - docker run -it --rm --net eth99 --name s5a iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s5b iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s5c iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s5d iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s5e iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s5f iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s5g iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s5h iperf3 -i1 -s
+  - pc6:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - docker run -it --rm --net eth99 --name s6a iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s6b iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s6c iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s6d iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s6e iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s6f iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s6g iperf3 -i1 -s
+        - docker run -it --rm --net eth99 --name s6h iperf3 -i1 -s
+  - ssh:
+      layout: main-horizontal
+      panes:
+        - sshpass -p ignitenet2018 ssh root@172.19.255.100
+        -
+  - mac:
+      layout: main-horizontal
+      panes:
+        - docker run -it --rm --net=eth99 --name mactelnet_server haakonn/mactelnet mactelnet -l
+        - docker rm -f mactelnet_server
+  - bash:
+        -

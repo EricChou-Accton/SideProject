@@ -1,0 +1,122 @@
+# /home/tester/.config/tmuxinator/cn.yml
+
+name: cn
+root: ~/
+
+windows:
+  - 99_stat:
+      layout: main-vertical
+      panes:
+        - list:
+          - ethstats -i eth99 -n 1 
+
+
+        - list:
+          - woodcn p4c8
+          - iperf3 -i1 -s -A 0 -p5203
+
+  - 9-12:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - list:
+          - woodcn p4c8
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p4c8
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p5c10
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p5c10
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p6c12
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p6c12
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p7c14
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p7c14
+          - iperf3 -i1 -s -A 0 -p5203
+          
+  - 13-16:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - list:
+          - woodcn p8c16
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p8c16
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p12c24
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p12c24
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p16c32
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p16c32
+          - iperf3 -i1 -s -A 0 -p5203
+
+  - 33-36:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - list:
+          - woodcn p17c33
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p17c33
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p17c34
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p17c34
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p18c35
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p18c35
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p18c36
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p18c36
+          - iperf3 -i1 -s -A 0 -p5203
+          
+  - 37-40:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - list:
+          - woodcn p19c37
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p19c37
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p19c38
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p19c38
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p20c39
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p20c39
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p20c40
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p20c40
+          - iperf3 -i1 -s -A 0 -p5203

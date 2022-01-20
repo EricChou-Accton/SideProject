@@ -1,0 +1,136 @@
+# /home/tester/.config/tmuxinator/dn.yml
+
+name: pc360
+root: ~/
+
+windows:
+  - dash:
+      layout: main-vertical
+      panes:
+        - list:
+          - sudo -i
+          - ./flush
+          - iptables-restore < iptables.rules
+        - cat Readme
+        - #empty
+  - dn1-4:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - list:
+          - ssh root@
+          - docker run -it --rm --net eth99 --name cn1-u1 iperf3 -c 172.19.99.1 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn1-u2 iperf3 -c 172.19.99.1 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn2-u1 iperf3 -c 172.19.99.2 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn2-u2 iperf3 -c 172.19.99.2 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn3-u1 iperf3 -c 172.19.99.3 -P2 -i1 -t300  -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn3-u2 iperf3 -c 172.19.99.3 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn4-u1 iperf3 -c 172.19.99.4 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn4-u2 iperf3 -c 172.19.99.4 -P2 -i1 -t300 -R -p5203 -u -b1G
+
+  - dn5-8:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - list:
+          - docker run -it --rm --net eth99 --name cn5-u1 iperf3 -c 172.19.99.5 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn5-u2 iperf3 -c 172.19.99.5 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn6-u1 iperf3 -c 172.19.99.6 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn6-u2 iperf3 -c 172.19.99.6 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn7-u1 iperf3 -c 172.19.99.7 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn7-u2 iperf3 -c 172.19.99.7 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn8-u1 iperf3 -c 172.19.99.8 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn8-u2 iperf3 -c 172.19.99.8 -P2 -i1 -t300 -R -p5203 -u -b1G
+
+
+  - dn9-12:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - list:
+          - docker run -it --rm --net eth99 --name cn9-u1 iperf3 -c 172.19.99.5 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn9-u2 iperf3 -c 172.19.99.5 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn10-u1 iperf3 -c 172.19.99.6 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn10-u2 iperf3 -c 172.19.99.6 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn11-u1 iperf3 -c 172.19.99.7 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn11-u2 iperf3 -c 172.19.99.7 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn12-u1 iperf3 -c 172.19.99.8 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn12-u2 iperf3 -c 172.19.99.8 -P2 -i1 -t300 -R -p5203 -u -b1G
+
+  - dn13-16:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - list:
+          - docker run -it --rm --net eth99 --name cn13-u1 iperf3 -c 172.19.99.5 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn13-u2 iperf3 -c 172.19.99.5 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn14-u1 iperf3 -c 172.19.99.6 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn14-u2 iperf3 -c 172.19.99.6 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn15-u1 iperf3 -c 172.19.99.7 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn15-u2 iperf3 -c 172.19.99.7 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn16-u1 iperf3 -c 172.19.99.8 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn16-u2 iperf3 -c 172.19.99.8 -P2 -i1 -t300 -R -p5203 -u -b1G
+
+  - dn17-20:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - list:
+          - docker run -it --rm --net eth99 --name cn17-u1 iperf3 -c 172.19.99.5 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn17-u2 iperf3 -c 172.19.99.5 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn18-u1 iperf3 -c 172.19.99.6 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn18-u2 iperf3 -c 172.19.99.6 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn19-u1 iperf3 -c 172.19.99.7 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn19-u2 iperf3 -c 172.19.99.7 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn20-u1 iperf3 -c 172.19.99.8 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn20-u2 iperf3 -c 172.19.99.8 -P2 -i1 -t300 -R -p5203  -u -b1G
+
+  - dn21-24:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - list:
+          - docker run -it --rm --net eth99 --name cn21-u1 iperf3 -c 172.19.99.5 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn21-u2 iperf3 -c 172.19.99.5 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn22-u1 iperf3 -c 172.19.99.6 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn22-u2 iperf3 -c 172.19.99.6 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn23-u1 iperf3 -c 172.19.99.7 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn23-u2 iperf3 -c 172.19.99.7 -P2 -i1 -t300 -R -p5203 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn24-u1 iperf3 -c 172.19.99.8 -P2 -i1 -t300 -u -b1G
+        - list:
+          - docker run -it --rm --net eth99 --name cn24-u2 iperf3 -c 172.19.99.8 -P2 -i1 -t300 -R -p5203 -u -b1G

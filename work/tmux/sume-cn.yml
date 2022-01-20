@@ -1,0 +1,62 @@
+# /home/tester/.config/tmuxinator/cn.yml
+
+name: cn
+root: ~/
+
+windows:
+
+  - cn1-4:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - list:
+          - woodcn p1c1
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p1c1
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p1c2
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p1c2
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p2c3
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p2c3
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p2c4
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p2c4
+          - iperf3 -i1 -s -A 0 -p5203
+
+  - 5-8:
+      layout: fd69,139x31,0,0{69x31,0,0[69x7,0,0,1,69x7,0,8,21,69x7,0,16,19,69x7,0,24,23],69x31,70,0[69x7,70,0,18,69x7,70,8,22,69x7,70,16,20,69x7,70,24,24]}
+      panes:
+        - list:
+          - woodcn p3c5
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p3c5
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p3c6
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p3c6
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p4c7
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p4c7
+          - iperf3 -i1 -s -A 0 -p5203
+        - list:
+          - woodcn p5c9
+          - iperf3 -i1 -s -A 0
+        - list:
+          - woodcn p5c9
+          - iperf3 -i1 -s -A 0 -p5203
